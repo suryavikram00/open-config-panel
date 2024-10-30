@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'open-config-panel'`, () => {
+  it(`should have as title 'crud-panel'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('open-config-panel');
+    expect(app.title).toEqual('crud-panel');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('open-config-panel app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('crud-panel app is running!');
   });
 });
