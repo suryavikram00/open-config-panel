@@ -21,8 +21,8 @@ import { EMPTY } from 'rxjs';
                 exportEnabled: false,
                 accreditionEnabled : false,
                 edit: {
-                    enabled: false,
-                    column: []
+                    enabled: true,
+                    column: ['value']
                 },
                 create: {
                     enabled: false,

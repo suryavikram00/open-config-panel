@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -87,6 +87,7 @@ import { SafeHtmlPipe } from './utils/safe-html-pipe';
       multi: true
     }
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA], // Add this line to support custom elements
   bootstrap: [AppComponent]
 })
 export class AppModule { }

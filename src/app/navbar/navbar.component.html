@@ -9,7 +9,9 @@
             </button>
         </div>
         <div class="px-1 ">
-            <a class="navbar-brand" routerLink="/panel-dashboard"><span class="font-weight-normal">Config Service</span>
+            <a class="navbar-brand" routerLink="/panel-dashboard"><span class="font-weight-normal">
+                <app-content [allowEdit]="true" [configName]="'config-service-title'"></app-content>
+            </span>
             </a>
         </div>
         <div class="mr-auto">
